@@ -4,4 +4,8 @@
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D81B60</color>
     <color name="main_top">#4D959595</color>
+    <color name="rollMenuBackgroundEnable">#3498DB</color>
+    <color name="rollMenuBackgroundDisable">#E0E0E0</color>
+    <color name="rollMenuTextEnable">#FFFFFF</color>
+    <color name="rollMenuTextDisable">#404040</color>
 </resources>

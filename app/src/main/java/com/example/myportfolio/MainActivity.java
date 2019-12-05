@@ -2,7 +2,7 @@ package com.example.myportfolio;
 
 import android.os.Bundle;
 import android.view.Gravity;
-import android.widget.ImageButton;
+import android.widget.ImageView;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.drawerlayout.widget.DrawerLayout;
@@ -13,8 +13,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-       ImageButton open = findViewById(R.id.open);
-       ImageButton close = findViewById(R.id.close);
+       ImageView open = findViewById(R.id.open);
         open.setOnClickListener((v)->{
             drawer = (DrawerLayout) findViewById(R.id.drawer);
             if (!drawer.isDrawerOpen(Gravity.LEFT)) {
@@ -22,12 +21,6 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-/*        close.setOnClickListener((v)->{
-            drawer = (DrawerLayout) findViewById(R.id.drawer);
-            if (drawer.isDrawerOpen(Gravity.LEFT)) {
-                drawer.closeDrawer(Gravity.LEFT) ;
-            }
-        });*/
 
 
  /*      close.setOnClickListener(new ImageButton.OnClickListener(){

@@ -424,6 +424,10 @@ color primary_text_disabled_material_dark
 color primary_text_disabled_material_light
 color ripple_material_dark
 color ripple_material_light
+color rollMenuBackgroundDisable
+color rollMenuBackgroundEnable
+color rollMenuTextDisable
+color rollMenuTextEnable
 color secondary_text_default_material_dark
 color secondary_text_default_material_light
 color secondary_text_disabled_material_dark
@@ -698,7 +702,6 @@ id checkbox
 id chronometer
 id clip_horizontal
 id clip_vertical
-id close
 id collapseActionView
 id content
 id contentPanel
