@@ -638,10 +638,14 @@ drawable abc_textfield_search_activated_mtrl_alpha
 drawable abc_textfield_search_default_mtrl_alpha
 drawable abc_textfield_search_material
 drawable abc_vector_test
+drawable facereg
+drawable github
 drawable ic_launcher_background
 drawable ic_launcher_foreground
 drawable main
+drawable main_icon
 drawable menu_bt
+drawable music
 drawable notification_action_background
 drawable notification_bg
 drawable notification_bg_low
@@ -654,7 +658,9 @@ drawable notification_template_icon_bg
 drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
+drawable optimize
 drawable profile
+drawable project_bg
 drawable rounded
 drawable toolbox
 drawable tooltip_frame_dark
@@ -663,6 +669,7 @@ id ALT
 id CTRL
 id FUNCTION
 id META
+id Name
 id SHIFT
 id SYM
 id action_bar
@@ -708,8 +715,10 @@ id content
 id contentPanel
 id custom
 id customPanel
+id date
 id decor_content_parent
 id default_activity_button
+id desc
 id dimensions
 id direct
 id disableHome
@@ -722,6 +731,7 @@ id fill
 id fill_horizontal
 id fill_vertical
 id forever
+id github
 id gone
 id group_divider
 id groups
@@ -731,6 +741,7 @@ id icon
 id icon_group
 id ifRoom
 id image
+id imageView1
 id info
 id invisible
 id italic
@@ -739,6 +750,8 @@ id line1
 id line3
 id listMode
 id list_item
+id listview1
+id location
 id message
 id middle
 id multiply
@@ -853,6 +866,8 @@ layout notification_template_custom_big
 layout notification_template_icon_group
 layout notification_template_part_chronometer
 layout notification_template_part_time
+layout project_main
+layout row
 layout select_dialog_item_material
 layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material

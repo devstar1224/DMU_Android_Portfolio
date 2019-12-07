@@ -19,6 +19,7 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/Theme.AppCompat.NoActionBar" >
+        <activity android:name="com.example.myportfolio.ProjectActivity" />
         <activity android:name="com.example.myportfolio.MainActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

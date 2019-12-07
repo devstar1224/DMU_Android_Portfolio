@@ -1,5 +1,6 @@
 package com.example.myportfolio;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Gravity;
 import android.widget.Button;
@@ -44,7 +45,8 @@ public class MainActivity extends AppCompatActivity {
             Home.setTextColor(getApplicationContext().getResources().getColor(R.color.rollMenuTextDisable));
             Contect.setBackgroundColor(getApplicationContext().getResources().getColor(R.color.rollMenuBackgroundDisable));
             Contect.setTextColor(getApplicationContext().getResources().getColor(R.color.rollMenuTextDisable));
-
+            Intent it = new Intent(MainActivity.this, ProjectActivity.class);
+            startActivity(it);
         });
 
         Contect.setOnClickListener((v)->{
@@ -54,7 +56,6 @@ public class MainActivity extends AppCompatActivity {
             Project.setTextColor(getApplicationContext().getResources().getColor(R.color.rollMenuTextDisable));
             Home.setBackgroundColor(getResources().getColor(R.color.rollMenuBackgroundDisable));
             Home.setTextColor(getResources().getColor(R.color.rollMenuTextDisable));
-
 
         });
     }
