@@ -8,6 +8,15 @@ public class ListViewItem {
     private String desc;
     private String location;
     private String date;
+    private String github;
+
+    public String getGithub() {
+        return github;
+    }
+
+    public void setGithub(String github) {
+        this.github = github;
+    }
 
     public Drawable getIcon() {
         return icon;
@@ -48,11 +57,12 @@ public class ListViewItem {
     public void setDate(String date) {
         this.date = date;
     }
-    public void setData(Drawable ic, String title, String Desc, String Location, String Date){
+    public void setData(Drawable ic, String title, String Desc, String Location, String Date, String github){
         icon = ic;
         name = title;
         desc = Desc;
         location = Location;
         date = Date;
+        this.github = github;
     }
 }
