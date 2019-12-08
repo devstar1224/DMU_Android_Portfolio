@@ -11,7 +11,7 @@
 9-->C:\Users\user\Desktop\Share\DMU_Android_work\app\src\main\AndroidManifest.xml
 10
 11    <application
-11-->C:\Users\user\Desktop\Share\DMU_Android_work\app\src\main\AndroidManifest.xml:5:5-20:19
+11-->C:\Users\user\Desktop\Share\DMU_Android_work\app\src\main\AndroidManifest.xml:5:5-22:19
 12        android:allowBackup="true"
 12-->C:\Users\user\Desktop\Share\DMU_Android_work\app\src\main\AndroidManifest.xml:6:9-35
 13        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
@@ -45,6 +45,12 @@
 26-->C:\Users\user\Desktop\Share\DMU_Android_work\app\src\main\AndroidManifest.xml:17:27-74
 27            </intent-filter>
 28        </activity>
-29    </application>
-30
-31</manifest>
+29        <activity android:name="com.example.myportfolio.ProjectPopupHandler" />
+29-->C:\Users\user\Desktop\Share\DMU_Android_work\app\src\main\AndroidManifest.xml:20:9-57
+29-->C:\Users\user\Desktop\Share\DMU_Android_work\app\src\main\AndroidManifest.xml:20:19-54
+30        <activity android:name="com.example.myportfolio.ContactActivity" />
+30-->C:\Users\user\Desktop\Share\DMU_Android_work\app\src\main\AndroidManifest.xml:21:9-53
+30-->C:\Users\user\Desktop\Share\DMU_Android_work\app\src\main\AndroidManifest.xml:21:19-50
+31    </application>
+32
+33</manifest>

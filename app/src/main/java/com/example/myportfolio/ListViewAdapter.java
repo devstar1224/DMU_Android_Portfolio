@@ -1,8 +1,6 @@
 package com.example.myportfolio;
 
-import android.app.AlertDialog;
 import android.content.Context;
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.drawable.Drawable;
 import android.net.Uri;
@@ -57,33 +55,31 @@ public class ListViewAdapter extends BaseAdapter {
         ImageView gitImageView = (ImageView) convertView.findViewById(R.id.github);
         ListViewItem listViewItem = listViewItemList.get(position);
 
+        iconImageView.setOnClickListener((v) ->{
+            Intent it = new Intent(context, ProjectPopupHandler.class);
+            it.putExtra("image", pos);
+            it.putExtra("title", listViewItemList.get(pos).getName());
+            it.putExtra("desc", listViewItemList.get(pos).getDesc());
+            it.putExtra("location", listViewItemList.get(pos).getLocation());
+            it.putExtra("date", listViewItemList.get(pos).getDate());
+            context.startActivity(it);
+        });
+
+        gitImageView.setOnClickListener((v) -> {
+                    if (listViewItemList.get(pos).getGithub() != null) {
+                        Toast.makeText(context, listViewItemList.get(pos).getName() + "으로 이동합니다.", Toast.LENGTH_SHORT).show();
+                        Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(listViewItemList.get(pos).getGithub()));
+                        context.startActivity(intent);
+                    } else {
+                        Toast.makeText(context, "설정된 깃허브 주소가 없습니다.", Toast.LENGTH_SHORT).show();
+                    }
+        });
         iconImageView.setImageDrawable(listViewItem.getIcon());
         nameTextView.setText(listViewItem.getName());
         descTextView.setText(listViewItem.getDesc());
         locationTextView.setText(listViewItem.getLocation());
         dateTextView.setText(listViewItem.getDate());
 
-        gitImageView.setOnClickListener(v -> {
-            AlertDialog.Builder alertdialog = new AlertDialog.Builder(context);
-            alertdialog.setMessage(listViewItemList.get(pos).getName() + "으로 이동하시겠습니까?");
-            alertdialog.setPositiveButton("확인", new DialogInterface.OnClickListener() {
-                @Override
-                public void onClick(DialogInterface dialog, int which) {
-                    if (listViewItemList.get(pos).getGithub() != null) {
-                        Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(listViewItemList.get(pos).getGithub()));
-                        context.startActivity(intent);
-                    } else {
-                        Toast.makeText(context, "설정된 깃허브 주소가 없습니다.", Toast.LENGTH_SHORT).show();
-                    }
-                }
-            });
-            alertdialog.setNegativeButton("취소", new DialogInterface.OnClickListener() {
-                @Override
-                public void onClick(DialogInterface dialog, int which) {
-
-                }
-            });
-        });
         return  convertView;
     }
     public  void  addItem(Drawable icon, String name, String desc, String location, String date){

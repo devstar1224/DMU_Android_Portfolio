@@ -28,35 +28,28 @@ public class MainActivity extends AppCompatActivity {
         Project = findViewById(R.id.project);
         Contect = findViewById(R.id.contect);
 
-        Home.setOnClickListener((v)->{
-            Home.setBackgroundColor(getApplicationContext().getResources().getColor(R.color.rollMenuBackgroundEnable));
-            Home.setTextColor(getApplicationContext().getResources().getColor(R.color.rollMenuTextEnable));
-            Project.setBackgroundColor(getApplicationContext().getResources().getColor(R.color.rollMenuBackgroundDisable));
-            Project.setTextColor(getApplicationContext().getResources().getColor(R.color.rollMenuTextDisable));
-            Contect.setBackgroundColor(getApplicationContext().getResources().getColor(R.color.rollMenuBackgroundDisable));
-            Contect.setTextColor(getApplicationContext().getResources().getColor(R.color.rollMenuTextDisable));
-
-        });
 
         Project.setOnClickListener((v)->{
-            Project.setBackgroundColor(getApplicationContext().getResources().getColor(R.color.rollMenuBackgroundEnable));
-            Project.setTextColor(getApplicationContext().getResources().getColor(R.color.rollMenuTextEnable));
-            Home.setBackgroundColor(getApplicationContext().getResources().getColor(R.color.rollMenuBackgroundDisable));
-            Home.setTextColor(getApplicationContext().getResources().getColor(R.color.rollMenuTextDisable));
-            Contect.setBackgroundColor(getApplicationContext().getResources().getColor(R.color.rollMenuBackgroundDisable));
-            Contect.setTextColor(getApplicationContext().getResources().getColor(R.color.rollMenuTextDisable));
+//            Project.setBackgroundColor(getApplicationContext().getResources().getColor(R.color.rollMenuBackgroundEnable));
+//            Project.setTextColor(getApplicationContext().getResources().getColor(R.color.rollMenuTextEnable));
+//            Home.setBackgroundColor(getApplicationContext().getResources().getColor(R.color.rollMenuBackgroundDisable));
+//            Home.setTextColor(getApplicationContext().getResources().getColor(R.color.rollMenuTextDisable));
+//            Contect.setBackgroundColor(getApplicationContext().getResources().getColor(R.color.rollMenuBackgroundDisable));
+//            Contect.setTextColor(getApplicationContext().getResources().getColor(R.color.rollMenuTextDisable));
             Intent it = new Intent(MainActivity.this, ProjectActivity.class);
             startActivity(it);
         });
-
-        Contect.setOnClickListener((v)->{
-            Contect.setBackgroundColor(getApplicationContext().getResources().getColor(R.color.rollMenuBackgroundEnable));
-            Contect.setTextColor(getApplicationContext().getResources().getColor(R.color.rollMenuTextEnable));
-            Project.setBackgroundColor(getApplicationContext().getResources().getColor(R.color.rollMenuBackgroundDisable));
-            Project.setTextColor(getApplicationContext().getResources().getColor(R.color.rollMenuTextDisable));
-            Home.setBackgroundColor(getResources().getColor(R.color.rollMenuBackgroundDisable));
-            Home.setTextColor(getResources().getColor(R.color.rollMenuTextDisable));
-
-        });
+//
+    Contect.setOnClickListener((v)->{
+//            Contect.setBackgroundColor(getApplicationContext().getResources().getColor(R.color.rollMenuBackgroundEnable));
+//            Contect.setTextColor(getApplicationContext().getResources().getColor(R.color.rollMenuTextEnable));
+//            Project.setBackgroundColor(getApplicationContext().getResources().getColor(R.color.rollMenuBackgroundDisable));
+//            Project.setTextColor(getApplicationContext().getResources().getColor(R.color.rollMenuTextDisable));
+//            Home.setBackgroundColor(getResources().getColor(R.color.rollMenuBackgroundDisable));
+//            Home.setTextColor(getResources().getColor(R.color.rollMenuTextDisable));
+//
+        Intent it = new Intent(MainActivity.this, ContactActivity.class);
+        startActivity(it);
+      });
     }
 }

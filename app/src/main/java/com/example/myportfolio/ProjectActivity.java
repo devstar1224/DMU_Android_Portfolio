@@ -27,6 +27,7 @@ public class ProjectActivity extends AppCompatActivity {
         adapter = new ListViewAdapter(arrays);
         listview = (ListView) findViewById(R.id.listview1);
         listview.setAdapter(adapter);
+
     }
 
     private void initialData() {
